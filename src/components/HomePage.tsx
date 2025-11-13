@@ -70,27 +70,22 @@ const HomePage = () => {
           </div>
           {/* Button 1: Subject talks (primary style restored) */}
           <div className="flex-shrink-0 mb-8 flex justify-center">
-            <button onClick={() => window.location.href = 'https://sheffield.ac.uk/undergraduate/visit/your-open-day-guide/subject-talks-november'} className="w-full max-w-3xl bg-[#23125E] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
+            <button className="w-full max-w-3xl bg-[#23125E] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
               Subject talks
             </button>
           </div>
 
-          {/* Buttons 2 & 3: Accommodation & University talks in same row */}
-          <div className="flex-shrink-0 flex space-x-8 mb-8 justify-center">
-            <div className="flex space-x-8 max-w-3xl w-full">
-              <button onClick={() => window.location.href = 'https://sheffield.ac.uk/undergraduate/visit/your-open-day-guide/tours#accommodation-tours-(ranmoor-and-endcliffe)'} className="flex-1 bg-[#7000FF] text-white py-16 px-8 rounded-3xl text-4xl font-bold font-source-serif-pro hover:bg-[#7a0aff] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-xl">
-                Accommodation
-              </button>
-              <button onClick={() => window.location.href = 'https://sheffield.ac.uk/undergraduate/visit/your-open-day-guide/university-talks-november'} className="flex-1 bg-[#7000FF] text-white py-16 px-8 rounded-3xl text-4xl font-bold font-source-serif-pro hover:bg-[#7a0aff] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-xl">
-                University talks
-              </button>
-            </div>
+          {/* Buttons: University talks*/}
+          <div className="flex-shrink-0 mb-8 flex justify-center">
+            <button onClick={() => navigate('/UniversityTalks')} className="w-full max-w-3xl bg-[#23125E] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
+              University talks
+            </button>
           </div>
 
           {/* Open Day Guide Card - restored original card styling and interactions */}
           <div className="flex-shrink-0 mb-8 flex justify-center">
             <div className="w-full max-w-3xl bg-gradient-to-br from-black/20 to-black/20 backdrop-blur-lg border-2 border-white/20 rounded-3xl py-16 px-12 shadow-2xl hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 cursor-pointer group" onClick={() => window.location.href = 'https://sheffield.ac.uk/undergraduate/visit/your-open-day-guide'}>
-              <div className="flex items-center justify-center space-x-4">
+              <div onClick={() => window.location.href = 'https://sheffield.ac.uk/undergraduate/visit/your-open-day-guide/'} className="flex items-center justify-center space-x-4">
                 <h2 className="text-white text-4xl font-bold font-source-serif-pro drop-shadow-lg group-hover:text-white/90 transition-colors duration-300">
                   Your open day guide
                 </h2>
