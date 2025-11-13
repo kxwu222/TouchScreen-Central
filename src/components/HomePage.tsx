@@ -109,7 +109,7 @@ const HomePage = () => {
                       </svg>
                     </div>
                     <h3 className="text-white text-4xl font-bold font-source-serif-pro drop-shadow-lg group-hover:text-white/90 transition-colors duration-300 tracking-wider">
-                      Student experience videos
+                      Student TikTok videos
                     </h3>
                   </div>
                   <p className="text-gray-300 text-2xl ml-16">Watch student life highlights and experiences</p>
