@@ -77,7 +77,7 @@ const HomePage = () => {
 
           {/* Buttons: University talks*/}
           <div className="flex-shrink-0 mb-8 flex justify-center">
-            <button onClick={() => navigate('/UniversityTalks')} className="w-full max-w-3xl bg-[#23125E] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
+            <button onClick={() => navigate('/UniversityTalks')} className="w-full max-w-3xl bg-[#7000FF] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
               University talks
             </button>
           </div>
