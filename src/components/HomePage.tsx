@@ -60,7 +60,7 @@ const HomePage = () => {
           </div>
 
           {/* Event Information with Real-Time Status */}
-          <div className="flex-shrink-0 mt-12 mb-16">
+          <div className="flex-shrink-0 mt-12 mb-20">
             <div className="mb-8">
               <h1 className="text-white text-7xl font-bold font-source-serif-pro leading-tight">Open Day</h1>
             </div>
@@ -68,29 +68,12 @@ const HomePage = () => {
               <p className="text-gray-200 text-4xl font-source-sans-pro">Saturday 22 November 2025</p>
             </div>
           </div>
-          {/* Button 1: Subject talks (primary style restored) */}
-          <div className="flex-shrink-0 mb-8 flex justify-center">
-            <button className="w-full max-w-3xl bg-[#23125E] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
-              Subject talks
-            </button>
-          </div>
 
           {/* Buttons: University talks*/}
-          <div className="flex-shrink-0 mb-8 flex justify-center">
+          <div className="flex-shrink-0 mb-12 flex justify-center">
             <button onClick={() => navigate('/university-talks')} className="w-full max-w-3xl bg-[#7000FF] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
               University talks
             </button>
-          </div>
-
-          {/* Open Day Guide Card - restored original card styling and interactions */}
-          <div className="flex-shrink-0 mb-8 flex justify-center">
-            <div className="w-full max-w-3xl bg-gradient-to-br from-black/20 to-black/20 backdrop-blur-lg border-2 border-white/20 rounded-3xl py-16 px-12 shadow-2xl hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 cursor-pointer group">
-              <div className="flex items-center justify-center space-x-4">
-                <h2 className="text-white text-4xl font-bold font-source-serif-pro drop-shadow-lg group-hover:text-white/90 transition-colors duration-300">
-                  Your open day guide
-                </h2>
-              </div>
-            </div>
           </div>
 
           {/* Video Gallery Card - restored original interactive card (Student Experience Videos) */}
