@@ -1,5 +1,5 @@
  
-import { ArrowUpRight, MapPin } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
           <source src="/background-video.mp4" type="video/mp4" />
           <div className="w-full h-full bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900"></div>
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/0 to-black/50"></div>
       </div>
 
       {/* Background Image instead of Video */}
@@ -48,7 +48,7 @@ const HomePage = () => {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex flex-col items-center px-12 py-24">
+      <div className="relative z-10 w-full h-full flex flex-col items-center px-12 pt-24 pb-8">
         <div className="w-full px-8 max-w-4xl flex flex-col h-full">
           
           {/* Top Logo */}
@@ -60,60 +60,55 @@ const HomePage = () => {
           </div>
 
           {/* Event Information with Real-Time Status */}
-          <div className="flex-shrink-0 mt-12 mb-20">
+          <div className="flex-shrink-0 mt-12 mb-16">
             <div className="mb-6">
               <h1 className="text-white text-7xl font-bold font-source-serif-pro leading-tight mb-4">Open Day</h1>
-              <p className="text-white/90 text-3xl font-source-sans-pro font-light">Welcome to the University of Sheffield</p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center">
                 <p className="text-gray-200 text-4xl font-source-sans-pro">Saturday 22 November 2025</p>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="text-white/80 w-8 h-8 flex-shrink-0" />
-                <p className="text-gray-200 text-3xl font-source-sans-pro">The Octagon Centre</p>
-              </div>
             </div>
           </div>
 
-          {/* Buttons: University talks*/}
-          <div className="flex-shrink-0 mb-12 flex justify-center">
-            <button onClick={() => navigate('/university-talks')} className="w-full max-w-3xl bg-[#7000FF] text-white py-16 px-10 rounded-3xl text-4xl font-bold text-center font-source-serif-pro hover:bg-[#2a1a6b] transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl">
-              University talks
-            </button>
-          </div>
-
-          {/* Video Gallery Card - restored original interactive card (Student Experience Videos) */}
-          <div className="flex-shrink-0 mb-20 flex justify-center">
-            <div 
-              onClick={() => navigate('/video-gallery')}
-              className="w-full max-w-3xl bg-gradient-to-r from-black/20 to-black/20 backdrop-blur-lg border border-white/20 rounded-3xl p-12 cursor-pointer hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl group"
-            >
-              <div className="flex justify-between items-center">
-                <div className="flex-1">
-                  <div className="flex items-center space-x-4 mb-3">
-                    {/* media-style icon */}
-                    <div className="bg-black/20 border-2 border-white/20 rounded-full p-3 group-hover:bg-gray-700/40 transition-all duration-300">
-                      <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                      </svg>
+          {/* Interactive Elements Container - University talks, Student videos, and Logos */}
+          <div className="flex-shrink-0 mt-auto flex flex-col items-center space-y-14 mb-32">
+            {/* Video Gallery Card - restored original interactive card (Student Experience Videos) */}
+            <div className="flex justify-center w-full">
+              <div 
+                onClick={() => navigate('/video-gallery')}
+                className="w-full max-w-3xl bg-gradient-to-r from-black/20 to-black/20 backdrop-blur-lg border border-white/20 rounded-3xl p-12 cursor-pointer hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl group"
+              >
+                <div className="flex justify-between items-center">
+                  <div className="flex-1">
+                    <div className="flex items-center space-x-4 mb-3">
+                      {/* media-style icon */}
+                      <div className="bg-black/20 border-2 border-white/20 rounded-full p-3 group-hover:bg-gray-700/40 transition-all duration-300">
+                        <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                      </div>
+                      <h3 className="text-white text-4xl font-bold font-source-serif-pro drop-shadow-lg group-hover:text-white/90 transition-colors duration-300 tracking-wider">
+                        Student TikTok videos
+                      </h3>
                     </div>
-                    <h3 className="text-white text-4xl font-bold font-source-serif-pro drop-shadow-lg group-hover:text-white/90 transition-colors duration-300 tracking-wider">
-                      Student TikTok videos
-                    </h3>
+                    <p className="text-gray-300 text-2xl ml-16">Watch student life highlights and experiences</p>
                   </div>
-                  <p className="text-gray-300 text-2xl ml-16">Watch student life highlights and experiences</p>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-6 group-hover:bg-gray-700/40 group-hover:border-gray-500/50 transition-all duration-300">
-                  <ArrowUpRight className="text-white w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
+                  <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-6 group-hover:bg-gray-700/40 group-hover:border-gray-500/50 transition-all duration-300">
+                    <ArrowUpRight className="text-white w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            {/* Buttons: University talks*/}
+            <div className="flex justify-center w-full">
+              <button onClick={() => navigate('/university-talks')} className="text-white text-4xl font-bold font-source-serif-pro w-full max-w-3xl bg-gradient-to-r from-black/20 to-black/20 backdrop-blur-lg border border-white/20 rounded-3xl p-12 cursor-pointer hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl group">
+                University talks
+              </button>
+            </div>
 
-          {/* Bottom Ranking Logos - QS and Russell Group in one row */}
-          <div className="flex-shrink-0 mt-24">
-            <div className="flex items-center justify-center gap-20">
+            {/* Bottom Ranking Logos - QS and Russell Group in one row */}
+            <div className="flex items-center justify-center gap-32">
               <img
                 src="/RG.png"
                 alt="Russell Group"
@@ -124,7 +119,7 @@ const HomePage = () => {
               <img
                 src="/QS.png"
                 alt="A World Top 100 University"
-                className="h-20 md:h-24 lg:h-28 w-auto"
+                className="h-16 md:h-20 lg:h-28 w-auto"
                 decoding="async"
                 loading="eager"
               />
