@@ -1,5 +1,5 @@
  
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MapPin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -61,11 +61,18 @@ const HomePage = () => {
 
           {/* Event Information with Real-Time Status */}
           <div className="flex-shrink-0 mt-12 mb-20">
-            <div className="mb-8">
-              <h1 className="text-white text-7xl font-bold font-source-serif-pro leading-tight">Open Day</h1>
+            <div className="mb-6">
+              <h1 className="text-white text-7xl font-bold font-source-serif-pro leading-tight mb-4">Open Day</h1>
+              <p className="text-white/90 text-3xl font-source-sans-pro font-light">Welcome to the University of Sheffield</p>
             </div>
-            <div className="flex items-center">
-              <p className="text-gray-200 text-4xl font-source-sans-pro">Saturday 22 November 2025</p>
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <p className="text-gray-200 text-4xl font-source-sans-pro">Saturday 22 November 2025</p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="text-white/80 w-8 h-8 flex-shrink-0" />
+                <p className="text-gray-200 text-3xl font-source-sans-pro">The Octagon Centre</p>
+              </div>
             </div>
           </div>
 
