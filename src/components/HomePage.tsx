@@ -102,9 +102,9 @@ const HomePage = () => {
             </div>
             {/* Buttons: University talks*/}
             <div className="flex justify-center w-full">
-              <button onClick={() => navigate('/university-talks')} className="text-white text-4xl font-bold font-source-serif-pro w-full max-w-3xl bg-gradient-to-r from-black/20 to-black/20 backdrop-blur-lg border border-white/20 rounded-3xl p-12 cursor-pointer hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl group">
+            <button onClick={() => navigate('/university-talks')} className="text-white text-4xl font-bold font-source-serif-pro w-full max-w-3xl bg-gradient-to-r from-black/20 to-black/20 backdrop-blur-lg border border-white/20 rounded-3xl py-16 px-12 cursor-pointer hover:from-gray-800/40 hover:to-gray-700/40 hover:border-gray-500/50 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] shadow-2xl group">
                 University talks
-              </button>
+            </button>
             </div>
 
             {/* Bottom Ranking Logos - QS and Russell Group in one row */}
